@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		224AAF4328813A0F0053E66A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224AAF4228813A0F0053E66A /* AppDelegate.swift */; };
+		224AAF4528813A0F0053E66A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224AAF4428813A0F0053E66A /* SceneDelegate.swift */; };
+		224AAF4728813A0F0053E66A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224AAF4628813A0F0053E66A /* ViewController.swift */; };
+		224AAF4A28813A0F0053E66A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224AAF4828813A0F0053E66A /* Main.storyboard */; };
+		224AAF4D28813A0F0053E66A /* Yetda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 224AAF4B28813A0F0053E66A /* Yetda.xcdatamodeld */; };
+		224AAF4F28813A110053E66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224AAF4E28813A110053E66A /* Assets.xcassets */; };
+		224AAF5228813A110053E66A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224AAF5028813A110053E66A /* LaunchScreen.storyboard */; };
+		229EBA3528842C4A0033A6BA /* Site+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229EBA3128842C4A0033A6BA /* Site+CoreDataClass.swift */; };
+		229EBA3628842C4A0033A6BA /* Site+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229EBA3228842C4A0033A6BA /* Site+CoreDataProperties.swift */; };
+		229EBA3728842C4A0033A6BA /* Present+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229EBA3328842C4A0033A6BA /* Present+CoreDataClass.swift */; };
+		229EBA3828842C4A0033A6BA /* Present+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229EBA3428842C4A0033A6BA /* Present+CoreDataProperties.swift */; };
+		5DDD60F028853EC40077742D /* MakeCardDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDD60EF28853EC40077742D /* MakeCardDescriptionView.swift */; };
+		5DDD60F228853FC80077742D /* PhotoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDD60F128853FC80077742D /* PhotoCollectionCell.swift */; };
+		5DDD60F628854AEE0077742D /* MakeCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDD60F528854AEE0077742D /* MakeCard.storyboard */; };
+		5DDD60FA2885CBE50077742D /* KeywordCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDD60F92885CBE50077742D /* KeywordCollectionCell.swift */; };
+		6E94A3DF28853B500076E703 /* DidCardShare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E94A3DE28853B500076E703 /* DidCardShare.storyboard */; };
+		6E94A3E128853B8F0076E703 /* DidCardShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E94A3E028853B8F0076E703 /* DidCardShareViewController.swift */; };
+		6E94A3E328853C380076E703 /* DidPresent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E94A3E228853C380076E703 /* DidPresent.storyboard */; };
+		6E94A3E528853C4A0076E703 /* DidPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E94A3E428853C4A0076E703 /* DidPresentViewController.swift */; };
+		7355FEE5288708B0009F32E3 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 7355FEE4288708B0009F32E3 /* YPImagePicker */; };
+		736D28742885331D00F95DFD /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D28732885331D00F95DFD /* CardCell.swift */; };
+		736D28872885434800F95DFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D28862885434800F95DFD /* HomeViewController.swift */; };
+		736D2889288547F000F95DFD /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D2888288547F000F95DFD /* CardListView.swift */; };
+		736D288C28854CAE00F95DFD /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D288B28854CAE00F95DFD /* CardListViewModel.swift */; };
+		736D288F288673B000F95DFD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 736D288E288673B000F95DFD /* RxCocoa */; };
+		736D2891288673B000F95DFD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 736D2890288673B000F95DFD /* RxSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		224AAF3F28813A0F0053E66A /* Yetda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yetda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		224AAF4228813A0F0053E66A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		224AAF4428813A0F0053E66A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		224AAF4628813A0F0053E66A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		224AAF4928813A0F0053E66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		224AAF4C28813A0F0053E66A /* Yetda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yetda.xcdatamodel; sourceTree = "<group>"; };
+		224AAF4E28813A110053E66A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		224AAF5128813A110053E66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		224AAF5328813A110053E66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229EBA3128842C4A0033A6BA /* Site+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Site+CoreDataClass.swift"; sourceTree = "<group>"; };
+		229EBA3228842C4A0033A6BA /* Site+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Site+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		229EBA3328842C4A0033A6BA /* Present+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Present+CoreDataClass.swift"; sourceTree = "<group>"; };
+		229EBA3428842C4A0033A6BA /* Present+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Present+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5DDD60EF28853EC40077742D /* MakeCardDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCardDescriptionView.swift; sourceTree = "<group>"; };
+		5DDD60F128853FC80077742D /* PhotoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionCell.swift; sourceTree = "<group>"; };
+		5DDD60F528854AEE0077742D /* MakeCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MakeCard.storyboard; sourceTree = "<group>"; };
+		5DDD60F92885CBE50077742D /* KeywordCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCollectionCell.swift; sourceTree = "<group>"; };
+		6E94A3DE28853B500076E703 /* DidCardShare.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DidCardShare.storyboard; sourceTree = "<group>"; };
+		6E94A3E028853B8F0076E703 /* DidCardShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidCardShareViewController.swift; sourceTree = "<group>"; };
+		6E94A3E228853C380076E703 /* DidPresent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DidPresent.storyboard; sourceTree = "<group>"; };
+		6E94A3E428853C4A0076E703 /* DidPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidPresentViewController.swift; sourceTree = "<group>"; };
+		736D28732885331D00F95DFD /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		736D28862885434800F95DFD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		736D2888288547F000F95DFD /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		736D288B28854CAE00F95DFD /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		224AAF3C28813A0F0053E66A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736D2891288673B000F95DFD /* RxSwift in Frameworks */,
+				7355FEE5288708B0009F32E3 /* YPImagePicker in Frameworks */,
+				736D288F288673B000F95DFD /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		224AAF3628813A0F0053E66A = {
+			isa = PBXGroup;
+			children = (
+				224AAF4128813A0F0053E66A /* Yetda */,
+				224AAF4028813A0F0053E66A /* Products */,
+				7355FEE6288709F1009F32E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		224AAF4028813A0F0053E66A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				224AAF3F28813A0F0053E66A /* Yetda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		224AAF4128813A0F0053E66A /* Yetda */ = {
+			isa = PBXGroup;
+			children = (
+				736D288A28854C9E00F95DFD /* ViewModel */,
+				736D28762885334400F95DFD /* ViewController */,
+				736D28752885333E00F95DFD /* View */,
+				229EBA3128842C4A0033A6BA /* Site+CoreDataClass.swift */,
+				229EBA3228842C4A0033A6BA /* Site+CoreDataProperties.swift */,
+				229EBA3328842C4A0033A6BA /* Present+CoreDataClass.swift */,
+				229EBA3428842C4A0033A6BA /* Present+CoreDataProperties.swift */,
+				224AAF4228813A0F0053E66A /* AppDelegate.swift */,
+				224AAF4428813A0F0053E66A /* SceneDelegate.swift */,
+				224AAF4628813A0F0053E66A /* ViewController.swift */,
+				224AAF4828813A0F0053E66A /* Main.storyboard */,
+				5DDD60EF28853EC40077742D /* MakeCardDescriptionView.swift */,
+				5DDD60F128853FC80077742D /* PhotoCollectionCell.swift */,
+				5DDD60F92885CBE50077742D /* KeywordCollectionCell.swift */,
+				5DDD60F528854AEE0077742D /* MakeCard.storyboard */,
+				6E94A3DE28853B500076E703 /* DidCardShare.storyboard */,
+				6E94A3E228853C380076E703 /* DidPresent.storyboard */,
+				6E94A3E028853B8F0076E703 /* DidCardShareViewController.swift */,
+				6E94A3E428853C4A0076E703 /* DidPresentViewController.swift */,
+				224AAF4E28813A110053E66A /* Assets.xcassets */,
+				224AAF5028813A110053E66A /* LaunchScreen.storyboard */,
+				224AAF5328813A110053E66A /* Info.plist */,
+				224AAF4B28813A0F0053E66A /* Yetda.xcdatamodeld */,
+			);
+			path = Yetda;
+			sourceTree = "<group>";
+		};
+		7355FEE6288709F1009F32E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		736D28752885333E00F95DFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				736D28732885331D00F95DFD /* CardCell.swift */,
+				736D2888288547F000F95DFD /* CardListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		736D28762885334400F95DFD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				736D28862885434800F95DFD /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		736D288A28854C9E00F95DFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				736D288B28854CAE00F95DFD /* CardListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		224AAF3E28813A0F0053E66A /* Yetda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 224AAF5628813A110053E66A /* Build configuration list for PBXNativeTarget "Yetda" */;
+			buildPhases = (
+				224AAF3B28813A0F0053E66A /* Sources */,
+				224AAF3C28813A0F0053E66A /* Frameworks */,
+				224AAF3D28813A0F0053E66A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yetda;
+			packageProductDependencies = (
+				736D288E288673B000F95DFD /* RxCocoa */,
+				736D2890288673B000F95DFD /* RxSwift */,
+				7355FEE4288708B0009F32E3 /* YPImagePicker */,
+			);
+			productName = Yetda;
+			productReference = 224AAF3F28813A0F0053E66A /* Yetda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		224AAF3728813A0F0053E66A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					224AAF3E28813A0F0053E66A = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 224AAF3A28813A0F0053E66A /* Build configuration list for PBXProject "Yetda" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 224AAF3628813A0F0053E66A;
+			packageReferences = (
+				736D288D288673B000F95DFD /* XCRemoteSwiftPackageReference "RxSwift" */,
+				7355FEE3288708B0009F32E3 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+			);
+			productRefGroup = 224AAF4028813A0F0053E66A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				224AAF3E28813A0F0053E66A /* Yetda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		224AAF3D28813A0F0053E66A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDD60F628854AEE0077742D /* MakeCard.storyboard in Resources */,
+				224AAF5228813A110053E66A /* LaunchScreen.storyboard in Resources */,
+				6E94A3E328853C380076E703 /* DidPresent.storyboard in Resources */,
+				224AAF4F28813A110053E66A /* Assets.xcassets in Resources */,
+				224AAF4A28813A0F0053E66A /* Main.storyboard in Resources */,
+				6E94A3DF28853B500076E703 /* DidCardShare.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		224AAF3B28813A0F0053E66A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736D2889288547F000F95DFD /* CardListView.swift in Sources */,
+				6E94A3E528853C4A0076E703 /* DidPresentViewController.swift in Sources */,
+				229EBA3628842C4A0033A6BA /* Site+CoreDataProperties.swift in Sources */,
+				5DDD60FA2885CBE50077742D /* KeywordCollectionCell.swift in Sources */,
+				736D28742885331D00F95DFD /* CardCell.swift in Sources */,
+				229EBA3728842C4A0033A6BA /* Present+CoreDataClass.swift in Sources */,
+				736D288C28854CAE00F95DFD /* CardListViewModel.swift in Sources */,
+				224AAF4728813A0F0053E66A /* ViewController.swift in Sources */,
+				224AAF4D28813A0F0053E66A /* Yetda.xcdatamodeld in Sources */,
+				5DDD60F228853FC80077742D /* PhotoCollectionCell.swift in Sources */,
+				736D28872885434800F95DFD /* HomeViewController.swift in Sources */,
+				224AAF4328813A0F0053E66A /* AppDelegate.swift in Sources */,
+				5DDD60F028853EC40077742D /* MakeCardDescriptionView.swift in Sources */,
+				229EBA3528842C4A0033A6BA /* Site+CoreDataClass.swift in Sources */,
+				229EBA3828842C4A0033A6BA /* Present+CoreDataProperties.swift in Sources */,
+				6E94A3E128853B8F0076E703 /* DidCardShareViewController.swift in Sources */,
+				224AAF4528813A0F0053E66A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		224AAF4828813A0F0053E66A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				224AAF4928813A0F0053E66A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		224AAF5028813A110053E66A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				224AAF5128813A110053E66A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		224AAF5428813A110053E66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		224AAF5528813A110053E66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		224AAF5728813A110053E66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JASCMY8XL7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yetda/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guell.Yetda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		224AAF5828813A110053E66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JASCMY8XL7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yetda/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guell.Yetda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		224AAF3A28813A0F0053E66A /* Build configuration list for PBXProject "Yetda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				224AAF5428813A110053E66A /* Debug */,
+				224AAF5528813A110053E66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		224AAF5628813A110053E66A /* Build configuration list for PBXNativeTarget "Yetda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				224AAF5728813A110053E66A /* Debug */,
+				224AAF5828813A110053E66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7355FEE3288708B0009F32E3 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		736D288D288673B000F95DFD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7355FEE4288708B0009F32E3 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7355FEE3288708B0009F32E3 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
+		736D288E288673B000F95DFD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 736D288D288673B000F95DFD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		736D2890288673B000F95DFD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 736D288D288673B000F95DFD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		224AAF4B28813A0F0053E66A /* Yetda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				224AAF4C28813A0F0053E66A /* Yetda.xcdatamodel */,
+			);
+			currentVersion = 224AAF4C28813A0F0053E66A /* Yetda.xcdatamodel */;
+			path = Yetda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 224AAF3728813A0F0053E66A /* Project object */;
+}

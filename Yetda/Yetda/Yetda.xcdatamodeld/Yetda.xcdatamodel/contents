@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Present" representedClassName="Present" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image1" optional="YES" attributeType="Binary"/>
+        <attribute name="image2" optional="YES" attributeType="Binary"/>
+        <attribute name="image3" optional="YES" attributeType="Binary"/>
+        <attribute name="image4" optional="YES" attributeType="Binary"/>
+        <attribute name="image5" optional="YES" attributeType="Binary"/>
+        <attribute name="keyWord" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="whosFor" optional="YES" attributeType="String"/>
+        <relationship name="site" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Site" inverseName="present" inverseEntity="Site"/>
+    </entity>
+    <entity name="Site" representedClassName="Site" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="present" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Present" inverseName="site" inverseEntity="Present"/>
+    </entity>
+    <elements>
+        <element name="Present" positionX="4730.50390625" positionY="2211.30859375" width="128" height="224"/>
+        <element name="Site" positionX="4985.0078125" positionY="2277.32421875" width="128" height="89"/>
+    </elements>
+</model>

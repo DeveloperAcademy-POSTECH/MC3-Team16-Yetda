@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Did Present View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DidPresentViewController" id="Y6W-OH-hqX" customClass="DidPresentViewController" customModule="Yetda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKn-EJ-4cj">
+                                <rect key="frame" x="195" y="537" width="160" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="계속하기" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickedNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7yJ-qO-cMX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uq0-ay-lgn">
+                                <rect key="frame" x="-35" y="-100" width="445" height="551"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eod-VM-huh">
+                                <rect key="frame" x="20" y="537" width="160" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Ka-fE-w2N"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="돌아가기" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" systemColor="systemBlueColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="0.0"/>
+                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickedBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RNh-Rr-2hR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="Uq0-ay-lgn" secondAttribute="top" constant="100" id="22P-Gd-c12"/>
+                            <constraint firstItem="XKn-EJ-4cj" firstAttribute="top" secondItem="eod-VM-huh" secondAttribute="top" id="29F-oj-Q0I"/>
+                            <constraint firstItem="XKn-EJ-4cj" firstAttribute="leading" secondItem="eod-VM-huh" secondAttribute="trailing" constant="15" id="2Fs-wy-oVQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eod-VM-huh" secondAttribute="bottom" constant="80" id="2ib-v5-neL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XKn-EJ-4cj" secondAttribute="trailing" constant="20" id="4x2-su-PKe"/>
+                            <constraint firstItem="eod-VM-huh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="UBd-cY-j9h"/>
+                            <constraint firstItem="eod-VM-huh" firstAttribute="firstBaseline" secondItem="Uq0-ay-lgn" secondAttribute="baseline" constant="115" id="bHh-YA-esB"/>
+                            <constraint firstItem="eod-VM-huh" firstAttribute="width" secondItem="XKn-EJ-4cj" secondAttribute="width" id="kg9-pL-Mai"/>
+                            <constraint firstItem="XKn-EJ-4cj" firstAttribute="centerY" secondItem="eod-VM-huh" secondAttribute="centerY" id="mCy-nG-pm3"/>
+                            <constraint firstAttribute="leading" secondItem="Uq0-ay-lgn" secondAttribute="leading" constant="35" id="nri-Pj-wet"/>
+                            <constraint firstItem="Uq0-ay-lgn" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" constant="35" id="sHy-Dh-hLc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="eod-VM-huh" id="k3z-qV-3iD"/>
+                        <outlet property="backgroundImage" destination="Uq0-ay-lgn" id="MT5-cM-PNY"/>
+                        <outlet property="nextButton" destination="XKn-EJ-4cj" id="SJN-rh-lqT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218.40000000000001" y="120.98950524737631"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
